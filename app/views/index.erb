@@ -1,11 +1,22 @@
 <h1>Searchable Weather</h1>
 
-<form role="form" id="search-form">
+<form class="form-inline" role="form" id="search-form">
   <div class="form-group">
     <label for="city">City:</label>
     <input type="text" class="form-control" id="city">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Forcast Type
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">3-Day Forcast</a></li>
+      <li><a href="#">7-Day Forcast</a></li>
+      <li><a href="#">10-Day Forcast</a></li>
+    </ul>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
 </form>
 <div id="gen-cities">
 </div>
